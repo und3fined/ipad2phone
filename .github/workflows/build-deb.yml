@@ -21,8 +21,8 @@ jobs:
 
       - name: Build package
         run: |
+          rm -f packages/*
           make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
-
       - name: Publish artifact
         uses: actions/upload-artifact@v2
         with:
