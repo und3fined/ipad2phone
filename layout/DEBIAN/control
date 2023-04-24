@@ -1,9 +1,9 @@
-Package: daniel.skipdevicefamilycheck
-Name: skipDeviceFamilyCheck
+Package: dev.und3fy.ipad2phone
+Name: ipad2phone
 Depends: mobilesubstrate, firmware (>= 13.0)
 Version: 0.0.1
-Architecture: iphoneos-arm
+Architecture: iphoneos-arm64
 Description: Allow iPad app installation on any device
-Maintainer: daniel
+Maintainer: und3fined
 Author: daniel
 Section: Tweaks

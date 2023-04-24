@@ -21,12 +21,10 @@ jobs:
 
       - name: Build package
         run: |
-          make package
+          make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
 
-        env:
-          THEOS_PACKAGE_SCHEME: "rootless"
       - name: Publish artifact
         uses: actions/upload-artifact@v2
         with:
-          name: ipad2phone
+          name: dev.und3fy.ipad2phone
           path: ${{ github.workspace }}/packages/*.deb
